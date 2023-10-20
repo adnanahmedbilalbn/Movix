@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import "./style.scss";
 
 import ContentWrapper from "../../../components/contentWrapper/ContentWrapper";
-import VideoPopup from "../../../components/videoPopup/VideoPopup";
-import Img from "../../../components/lazyLoadImage/Img";
+import VideoPopUp from "../../../components/videoPopUp/VideoPopUp.jsx";
+import Img from "../../../components/LazyLoadImage/Img";
 import { PlayIcon } from "../Playbtn";
 
 
@@ -59,7 +59,7 @@ const VideosSection = ({ data, loading }) => {
                     </div>
                 )}
             </ContentWrapper>
-            <VideoPopup
+            <VideoPopUp
                 show={show}
                 setShow={setShow}
                 videoId={videoId}
